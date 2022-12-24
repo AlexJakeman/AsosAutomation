@@ -1,0 +1,24 @@
+
+
+// Asos Homepage
+const acceptcookiesbtn = '#onetrust-accept-btn-handler';
+const searchbar = '.SJwm9Lx';
+const searchsubmitbtn = '.kH5PAAC';
+
+// Product Page
+const dropdownsizemenu = '#main-size-select-0';
+const dropdownoption = '#main-size-select-0 > option:nth-child(6)';
+const addtobasketbtn = '#product-add-button > span:nth-child(2)';
+
+
+export {
+    acceptcookiesbtn,
+    searchbar,
+    searchsubmitbtn,
+    dropdownoption,
+    dropdownsizemenu,
+    addtobasketbtn
+}
+
+
+
