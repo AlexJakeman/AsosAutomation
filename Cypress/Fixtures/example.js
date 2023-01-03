@@ -12,7 +12,6 @@ class asosAddToBasketAndAssert{
         cy.visit("https://www.asos.com/")
     }
     acceptCookies() {
-        cy.visit('https://www.asos.com')
         cy.wait(4000)
         cy.get(acceptcookiesbtn).click()
     }
