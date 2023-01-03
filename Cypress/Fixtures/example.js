@@ -1,34 +1,36 @@
-import { dropdownsizemenu } from "./pagebjects"
 import { acceptcookiesbtn } from "./pagebjects"
-import { addtobasketbtn } from "./pagebjects"
-import { dropdownoption } from "./pagebjects"
+import { saveditemsbtn } from "./pagebjects"
+import { itemimg } from "./pagebjects"
+import { viewbasketbtn } from "./pagebjects"
+import { movetobagbtn } from "./pagebjects"
+import { saveforlaterbtn } from "./pagebjects"
 import { searchsubmitbtn } from "./pagebjects"
 import { searchbar } from "./pagebjects"
 
 class asosAddToBasketAndAssert{
-    navigate() {
+    navigateToAsos() {
         cy.visit("https://www.asos.com/")
     }
     acceptCookies() {
         cy.visit('https://www.asos.com')
         cy.wait(4000)
-        // cy.get('button').contains("That's ok").click()
         cy.get(acceptcookiesbtn).click()
     }
     searchForProduct() {
-        cy.get(searchbar).type('116779768')
+        cy.get(searchbar).type('121632372')
         cy.get(searchsubmitbtn).click()
     }
+    addToSavedItems() {
+        cy.get(saveforlaterbtn).click()
+        cy.get(saveditemsbtn).click({ force: true })
+    }
     addToBasket() {
-        // cy.get('select').contains('Please select').click()
-        // cy.get('option').contains('').click()
-        cy.select(dropdownsizemenu).click()
-        cy.get(dropdownoption).click()
-        cy.get(addtobasketbtn).click()
+        cy.get(movetobagbtn).click()
+        cy.get(viewbasketbtn).click({ multiple: true })
+    }
+    assertItemInBasket() {
+        cy.get(itemimg).should('be.visible')
     }
 }
 
-
 export default asosAddToBasketAndAssert
-
-

@@ -1,24 +1,26 @@
-
-
 // Asos Homepage
 const acceptcookiesbtn = '#onetrust-accept-btn-handler';
 const searchbar = '.SJwm9Lx';
 const searchsubmitbtn = '.kH5PAAC';
 
 // Product Page
-const dropdownsizemenu = '#main-size-select-0';
-const dropdownoption = '#main-size-select-0 > option:nth-child(6)';
-const addtobasketbtn = '#product-add-button > span:nth-child(2)';
+const saveforlaterbtn = '#save-for-later-portal-203603096 > button';
+const saveditemsbtn = '[aria-label="Saved Items"]';
 
+// Save For Later Page
+const movetobagbtn = '#saved-lists-app > main > div > div.loadedItemsWrapper_MrqQH > section > ol > li:nth-child(1) > div > div > div > button.toBagButton_mYSbq.toBagButton_LHRGf';
+const viewbasketbtn = '._3Wo6fpk';
+
+// Asos Basket
+const itemimg = '[class="bag-item-image-img"]'
 
 export {
     acceptcookiesbtn,
     searchbar,
     searchsubmitbtn,
-    dropdownoption,
-    dropdownsizemenu,
-    addtobasketbtn
+    saveforlaterbtn,
+    saveditemsbtn,
+    movetobagbtn,
+    viewbasketbtn,
+    itemimg
 }
-
-
-
