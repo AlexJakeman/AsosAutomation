@@ -1,0 +1,12 @@
+{
+  "name": "asos-automation",
+  "version": "1.0.0",
+  "description": "Setting up asos automation for Quotech technical test",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "dependencies": {
+    "cypress": "^12.2.0"
+  }
+}
